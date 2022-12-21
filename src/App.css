@@ -6,10 +6,11 @@
 
 .sideBar
 {
-  background-color: white;
+  background-color: whitesmoke;
   width: 20%;
   height: 100vh;
   border-right: 1px solid black;
+  color: darkslategray;
 }
 
 .sideBar a:hover
@@ -19,12 +20,17 @@
 
 .other
 {
-  
-  width: 100%;
+  width: 75%;
 }
 
-.brandBorder
+.dashboard
 {
-  border-bottom: 1px solid black;
   width: 100%;
+  text-align: center;
+}
+
+/* Dashboard */
+.app
+{
+  text-align: -webkit-center;
 }
