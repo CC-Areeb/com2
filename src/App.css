@@ -1,3 +1,9 @@
+/* Root variables for SCSS */
+:root{
+  --baseTheme: #b58a51;
+  --baseText: #fff;
+}
+
 /* Sidebar.js */
 .mainContainer
 {
@@ -6,16 +12,13 @@
 
 .sideBar
 {
-  background-color: whitesmoke;
   width: 20%;
-  height: 100vh;
-  border-right: 1px solid black;
-  color: darkslategray;
+  
 }
 
 .sideBar a:hover
 {
-  color: #b58a51;
+  color: var(--baseTheme);
 }
 
 .mainComponents
@@ -35,6 +38,11 @@
 }
 
 /* Products.js */
+th
+{
+  width: 1%;
+}
+
 .table_imgs
 {
   width: 40px;
@@ -51,4 +59,21 @@
 .addProduct
 {
   transition: 0.5s;
+}
+
+/* AddProduct.js */
+.inputFields
+{
+  width: 33%;
+}
+
+.dropDown
+{
+  width: 30%;
+}
+
+.legendTag
+{
+  background-color: var(--baseTheme);
+  color: var(--baseText);
 }

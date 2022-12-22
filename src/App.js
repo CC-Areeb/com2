@@ -1,8 +1,16 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  NavLink,
+} from 'react-router-dom';
 import './App.css';
-import { BrowserRouter, Routes, Route, Link, NavLink, } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
 import AddProduct from './pages/AddProduct';
+import EditProduct from './pages/EditProduct';
+import AddCategory from './pages/AddCategory';
+import Category from './pages/Category';
 
 function App() {
   return (
@@ -24,7 +32,7 @@ function App() {
                     <NavLink className="nav-link py-1"><i className="bi bi-briefcase me-2"></i>Manage Batches</NavLink>
                     <NavLink className="nav-link py-1"><i className="bi bi-people me-2"></i>Manage Users</NavLink>
                     <NavLink className="nav-link py-1"><i className="bi bi-list-ul me-2"></i>Manage Roles</NavLink>
-                    <NavLink className="nav-link py-1"><i className="bi bi-diagram-3 me-2"></i>Manage Categories</NavLink>
+                    <NavLink to="category" className="nav-link py-1"><i className="bi bi-diagram-3 me-2"></i>Manage Categories</NavLink>
                     <NavLink className="nav-link py-1"><i className="bi bi-person-vcard me-2"></i>Manage Beekeepers</NavLink>
                     <NavLink className="nav-link py-1"><i className="bi bi-map me-2"></i>Manage Regions</NavLink>
                     <NavLink className="nav-link py-1"><i className="bi bi-envelope-at me-2"></i>Manage Emails</NavLink>
@@ -45,6 +53,11 @@ function App() {
                       {/* Product routes */}                      
                       <Route path='product' element={<Products />} />
                       <Route path='product/add' element={<AddProduct />} />
+                      <Route path='product/edit' element={<EditProduct />} />
+
+                      {/* Category routes */}
+                      <Route path='category' element={<Category />} />
+                      <Route path='category/add' element={<AddCategory />} />
 
                       
                     </Routes>
