@@ -18,7 +18,7 @@
   color: #b58a51;
 }
 
-.other
+.mainComponents
 {
   width: 75%;
 }
@@ -26,11 +26,29 @@
 .dashboard
 {
   width: 100%;
-  text-align: center;
 }
 
-/* Dashboard */
+/* Dashboard.js */
 .app
 {
   text-align: -webkit-center;
+}
+
+/* Products.js */
+.table_imgs
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.borderColor
+{
+  border-color: lightgray;
+}
+
+.addProduct
+{
+  transition: 0.5s;
 }
